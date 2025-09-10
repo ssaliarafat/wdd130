@@ -1,15 +1,18 @@
 .callout {
+    background-color: rgba(5, 5, 74, 0.804);
 	
 }
 
 .callout img {
+    
 	
 }
 
 blockquote {
-	
+    padding: 10px;
+	color: white;
 }
 
 cite {
-	
+    color: white;
 }
