@@ -14,7 +14,11 @@
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
-  }
+  display: flex;
+  grid-template-columns: 120px 1fr 1fr;
+  justify-content: space-evenly;
+  align-items: center;
+}
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
@@ -31,8 +35,19 @@ nav, p, section, article {
   margin: 16px;
   padding: 8px;
 }
-.socialmedia a {
-    text-decoration: none;
+.container2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.two {
+    background-color: #ace;
+    height: 100px;
+}
+.container3 {
+  display: flex;
+   justify-content: space-around;
+
 }
 .hero {
   position: relative;
@@ -68,4 +83,44 @@ h2 {
   opacity: 0.7;
   background-color: var(--accent1-color);
   color: #fff; /* white text - make sure there is enough contrast with the background-color */
+}
+.navigation {
+  display: flex;
+ list-style: none
+}
+.navigation li {
+    flex: 1 1 auto;
+}
+.navigation a {
+    display: block;
+    color: navy;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navigation a:hover {
+    color: tomato;
+    text-decoration: underline;
+}
+footer {
+    display: grid;
+  align-items: center;
+}
+    
+.socialmedia {
+  grid-column: 2/3;
+  margin: 1rem;
+  justify-self: end;
+}
+    
+.copy {
+  width: 20rem;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  place-self: center;
+}
+.socialmedia a {
+    text-decoration: none;
 }
