@@ -1,56 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table Exercise - Solution</title>
-    <link rel="stylesheet" href="styles/table-exercise.css">
-</head>
-<body>
-    <main>
-        <h1>Table Exercise - Solution Example</h1>
-        <table>
-            <caption>
-                Front-end Web Developer Course
-            </caption>
-            <thead>
-                <tr>
-                    <th scope="col">Department</th>
-                    <th scope="col">Person</th>
-                    <th scope="col">Most interest in</th>
-                    <th scope="col">Age</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th rowspan="4">Accounting</th>
-                    <th scope="row">Chris</th>
-                    <td>HTML tables</td>
-                    <td>22</td>
-                </tr>
-                <tr>
-                    <th scope="row">Dennis</th>
-                    <td>Web accessibility</td>
-                    <td>45</td>
-                </tr>
-                <tr>
-                    <th scope="row">Sarah</th>
-                    <td>JavaScript frameworks</td>
-                    <td>29</td>
-                </tr>
-                <tr>
-                    <th scope="row">Karen</th>
-                    <td>Web performance</td>
-                    <td>36</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th scope="row" colspan="3">Average age</th>
-                    <td>33</td>
-                </tr>
-            </tfoot>
-        </table>
-    </main>
-</body>
-</html>
+<table>
+    <tr>
+        <th>Club</th> <!-- th is the header of the table /same as td but bolds texts-->
+        <th>Club2</th>
+    </tr>
+    <tr>
+        <td>man utd</td> <!--tr is table row and td defines each cell-->
+        <td>chelsea</td>
+    </tr>
+    <tr>
+        <td>arsenal</td>
+        <td>city</td>
+    </tr>
+</table>
+<br>
+<table> <!--thread is the header, tbody is the body and tfoot the footer, help in readability-->
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Apples</td>
+            <td>$2</td>
+        </tr>
+        <tr>
+            <td>Bananas</td>
+            <td>$3</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Total</td>
+            <td>$5</td>
+        </tr>
+    </tfoot>
+</table>
+<br>
+<table border="1"> <!--Colspan makes one cell merge over many columns, horizontally (spans columns)-->
+    <!--Rowspan makes it merge many rows, covers vertically and the number of 2 shows how many cells to merge-->
+    <tr>
+        <th rowspan="2">Name</th>
+        <th colspan="2">Scores</th>
+    </tr>
+    <tr>
+        <th>Math</th>
+        <th>Science</th>
+    </tr>
+    <tr>
+        <td>Arafat</td>
+        <td>90</td>
+        <td>85</td>
+    </tr>
+</table>
+<br> <!--Foams-->
+
+<form action="/submit" method="post">
+    <fieldset>
+        <legend>Signup Form</legend>
+
+        <label for="user">Username:</label>
+        <input id="user" type="text" name="username" required><br><br>
+
+        <label for="pass">Password:</label>
+        <input id="pass" type="password" name="password" required><br><br>
+
+        <label>Choose Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female<br><br>
+
+        <label for="fruit">Favorite Fruit:</label>
+        <select id="fruit" name="fruit">
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+        </select><br><br>
+
+        <button type="submit">Register</button>
+    </fieldset>
+</form>
+<br>
+<form>
+    <fieldset>
+        <legend>Contact Information</legend> <!-- Legend works as a header-->
+    </fieldset>
+    <fieldset>
+        <legend>Questions</legend> <!-- fieldset combines all kinds of form into one field -->
+    </fieldset>
+</form>
+
+<form>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+    </fieldset>
+    <!--Implicit way of making forms-->
+    <fieldset>
+        <legend>Contact Information</legend>
+        <label>Full Name: <input type="text" name="fullname"></label>
+        <label>Email: <input type="email" name="useremail"></label>
+    </fieldset>
+
+    <br>
+    <fieldset>
+        <legend>Questions</legend>
+        <label for="browser">What is your favorite internet browser?</label>
+        <select id="browser" name="browser">
+            <option value="chrome">Chrome</option>
+            <option value="firefox">Firefox</option>
+            <option value="safari">Safari</option>
+            <option value="edge">Edge</option>
+            <option value="brave">Brave</option>
+            <option value="other">Other</option>
+        </select>
+        <label for="pet">Do you have a household pet?</label>
+        <input type="checkbox" id="pet" name="pet">
+        <label for="feedback">List the places you have lived:</label>
+        <textarea id="feedback" name="feedback" rows="4"
+            placeholder="Stillwater Florida, Amsterdam Netherlands, Tibuktu Mali"></textarea>
+    </fieldset>
