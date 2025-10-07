@@ -12,12 +12,14 @@
   --body-font: Arial, Helvetica, sans-serif;
 }
 header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-  display: flex;
-  grid-template-columns: 120px 1fr 1fr;
-  justify-content: space-evenly;
-  align-items: center;
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+  display: grid;
+  grid-template-columns: auto auto auto; 
+  align-items: center;       
+  justify-content: center;   
+  column-gap: 40px;           
+  padding: 10px 0;         
 }
 body {
   font-family: var(--body-font);
@@ -29,7 +31,7 @@ header, main, footer {
 }
 h1, h2 {
   font-family: var(--heading-font);
-  color: var(--primary-color);
+  color: rgb(2, 231, 247);
 }
 nav, p, section, article {
   margin: 16px;
@@ -93,7 +95,7 @@ h2 {
 }
 .navigation a {
     display: block;
-    color: navy;
+    color: white;
     padding: 20px;
     text-decoration: none;
     font-size: 1.2rem;
