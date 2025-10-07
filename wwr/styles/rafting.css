@@ -53,9 +53,12 @@ nav, p, section, article {
 }
 .hero {
   position: relative;
+    background-color: #ace;
+
 }
 .hero h1 article {
     position: absolute;
+    
 }
 .hero img {
     display: block;
