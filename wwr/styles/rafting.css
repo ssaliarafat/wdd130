@@ -75,7 +75,11 @@ h1 {
 }
 .hero article img {
   float: right;
-  width: 125px;
+  height: 180px;
+  width: 145px;
+}
+.hero p {
+  text-align: justify;
 }
 h2 {
   top: 40px;
@@ -125,4 +129,13 @@ footer {
 }
 .socialmedia a {
     text-decoration: none;
+}
+article {
+   top: 40px;
+  width: 95%;
+  padding: 62px;
+  text-align: center;
+  background-color: var(--accent1-color);
+  color: #fff; /* white text - make */
+
 }
