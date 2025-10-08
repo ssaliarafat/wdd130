@@ -53,7 +53,7 @@ nav, p, section, article {
 }
 .hero {
   position: relative;
-    background-color: #ace;
+    background-color:  var(--accent1-color);
 
 }
 .hero h1 article {
@@ -82,7 +82,7 @@ h1 {
   width: 145px;
 }
 .hero p {
-  text-align: justify;
+  text-align: inherit;
 }
 h2 {
   top: 40px;
@@ -113,8 +113,9 @@ h2 {
     text-decoration: underline;
 }
 footer {
-    display: grid;
+  display: grid;
   align-items: center;
+  background-color:  var(--accent1-color);
 }
     
 .socialmedia {
@@ -129,6 +130,7 @@ footer {
   grid-column: 1/2;
   grid-row: 1/2;
   place-self: center;
+  color: #fff;
 }
 .socialmedia a {
     text-decoration: none;
