@@ -142,5 +142,57 @@ article {
   text-align: center;
   background-color: var(--accent1-color);
   color: #fff; /* white text - make */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
 
+}
+/*CSS rules for the Contact Page except for header, footer and h1 elements*/
+h3 {
+  padding: 16px;
+  text-align: center;
+  background-color: #ace;
+}
+.map-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+form {
+  width: 340px;
+  padding: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.1);
+  border-radius: 0.2rem;
+  background-color: #eee;
+  display: grid;
+  align-items: center;       
+  justify-content: center;
+}
+fieldset {
+  border: 1px solid rgb(0 0 0 / 0.2);
+}
+label, input, button, select, textarea {
+  font-family: Roboto, Arial, sans-serif;
+}
+label {
+  text-align: center;
+ /* padding-right: 1rem;*/
+}
+input, select, textarea {
+  font-size: 1.1rem;
+}
+button {
+  margin: 1rem;
+  background-color: navy;
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: rgb(2, 148, 134);
 }
