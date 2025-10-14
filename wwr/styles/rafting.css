@@ -215,3 +215,158 @@ button:hover {
 form, iframe {
   background-color: #ace;
 }
+/* Home Page */
+.hero1 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.hero1 img {
+  height: auto;
+  display: block;
+}
+.hero-text {
+  position: absolute;
+  top: 02%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 6.2rem;
+  width: 100%;
+}
+.hero-text h1 {
+  font-size: 58px;
+  color: #ace;
+}
+.cta {
+  background-color: rgb(2, 231, 247);
+  color: rgba(0, 0, 0, 0.5);
+  padding: 0.8rem 1.2rem;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+.cta:hover {
+  background-color: deepskyblue;
+}
+
+/* Grid Section */
+.grid-section {
+  padding: 10px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.grid-item {
+  background-color: var(--accent1-color);
+  color: white;
+  padding: 2rem;
+
+  text-align: center;
+}
+.grid-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Newsletter */
+.newsletter {
+  text-align: center;
+  background-color: #ace;
+  color: var(--accent1-color);
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+}
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: #264653;
+}
+.newsletter form label {
+  color: white;
+}
+.newsletter input {
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+.newsletter button {
+  background-color: var(--accent1-color);
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.newsletter button:hover {
+  background-color: #ace;
+}
+
+/*Trips Page */
+.trip-hero {
+  position: relative;
+  text-align: center;
+}
+.trip-hero-img {
+  width: 100%;
+  display: block;
+}
+.trip-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--accent2-color);
+  padding: 2rem;
+  border-radius: 8px;
+}
+.trip-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 20px;
+}
+.trip-card {
+  width: 250px;
+  background-color: var(--accent1-color);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+.trip-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.trip-table {
+  padding: 20px;
+  text-align: center;
+}
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+th {
+  background-color: var(--accent1-color);
+  color: white;
+}
+.trip-cta {
+  text-align: center;
+  padding: 20px;
+}
+.trip-cta p {
+  margin-bottom: 10px;
+}
